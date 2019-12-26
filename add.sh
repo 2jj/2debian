@@ -54,6 +54,7 @@ sudo apt-get install -y tmux
 
 # node
 sudo apt-get install -y nodejs
+sudo apt-get install -y npm
 
 # as user from here:
 function wS() { sudo -iu u bash -c "$@"; }
