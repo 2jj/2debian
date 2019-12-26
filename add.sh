@@ -61,7 +61,7 @@ sudo apt-get -y install neovim
 # tmux
 sudo apt-get -y install tmux
 
-function wS() { sudo -iu $USER bash -c "$@"; }
+function wS() { sudo -iu u bash -c "$@"; }
 
 wS 'mkdir $HOME/.config'
 wS 'git clone https://github.com/m2jj/nvim.git $HOME/.config/nvim'
