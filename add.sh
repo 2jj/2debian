@@ -51,6 +51,9 @@ sudo apt-get install -y neovim
 # tmux
 sudo apt-get install -y tmux
 
+# ripgrep
+sudo apt-get install -y ripgrep
+
 # node
 curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o n
 bash n lts
