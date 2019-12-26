@@ -15,8 +15,8 @@ sed -ie 's/#PasswordAuthentication\syes/PasswordAuthentication no/g' /etc/ssh/ss
 sed -ie 's/UsePAM\syes/UsePAM no/g' /etc/ssh/sshd_config
 
 # docker-ce
-sudo apt-get -y update
-sudo apt-get -y install \
+sudo apt-get update -y
+sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -28,7 +28,7 @@ sudo add-apt-repository \
    $(lsb_release -cs) \
    stable"
 sudo apt-get update
-sudo apt-get -y install docker-ce docker-ce-cli containerd.io
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 sudo docker run hello-world
 sudo groupadd docker
 sudo usermod -aG docker u
@@ -47,13 +47,13 @@ apt-get install -y unattended-upgrades apt-listchanges
 apt upgrade -y
 
 # nvim
-sudo apt-get -y install neovim
+sudo apt-get install -y neovim
 
 # tmux
-sudo apt-get -y install tmux
+sudo apt-get install -y tmux
 
 # node
-sudo apt-get -y install nodejs
+sudo apt-get install -y nodejs
 
 # as user from here:
 function wS() { sudo -iu u bash -c "$@"; }
