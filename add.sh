@@ -51,6 +51,9 @@ sudo apt-get install -y neovim
 # tmux
 sudo apt-get install -y tmux
 
+# git
+sudo apt-get install -y git
+
 # ripgrep
 sudo apt-get install -y ripgrep
 
