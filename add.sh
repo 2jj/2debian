@@ -51,8 +51,10 @@ sudo apt-get install -y neovim
 # tmux
 sudo apt-get install -y tmux
 
+# node
 curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o n
 bash n lts
+npm i -g yarn
 
 # as user from here:
 function wS() { sudo -iu u bash -c "$@"; }
@@ -61,4 +63,4 @@ wS 'git clone https://github.com/2jj/nvim.git $HOME/.config/nvim'
 wS 'ln -sf $HOME/.config/nvim/.bash_aliases $HOME/.bash_aliases'
 wS 'ln -sf $HOME/.config/nvim/.tmux.conf $HOME/.tmux.conf'
 
-wS 'npm i -g yarn'
+
