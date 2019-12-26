@@ -66,5 +66,7 @@ wS 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm'
 wS 'ln -sf /home/u/.config/nvim/.tmux.conf /home/u/.tmux.conf'
 
 # Manual stuff: pwd, nvm, node/npm, yarn, initial nvim start:
+# passwd u
+# su u
 # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash 
 # nvm i --lts && npm i -g yarn
