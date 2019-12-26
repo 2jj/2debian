@@ -62,6 +62,7 @@ function wS() { sudo -iu u bash -c "$@"; }
 wS 'mkdir /home/u/.config'
 wS 'git clone https://github.com/2jj/nvim.git /home/u/.config/nvim'
 wS 'ln -sf /home/u/.config/nvim/.bash_aliases /home/u/.bash_aliases'
+wS 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm'
 wS 'ln -sf /home/u/.config/nvim/.tmux.conf /home/u/.tmux.conf'
 
 # Manual stuff: pwd, nvm, node/npm, yarn, initial nvim start:
