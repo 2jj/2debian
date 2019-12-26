@@ -46,27 +46,28 @@ sudo curl -L https://github.com/docker/machine/releases/download/v0.13.0/docker-
 apt-get install -y unattended-upgrades apt-listchanges
 apt upgrade -y
 
-# nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# npm
-nvm install --lts
-
-# yarn
-npm i -g yarn
-
 # nvim
 sudo apt-get -y install neovim
 
 # tmux
 sudo apt-get -y install tmux
 
+# as user from here:
 function wS() { sudo -iu u bash -c "$@"; }
 
 wS 'mkdir $HOME/.config'
 wS 'git clone https://github.com/2jj/nvim.git $HOME/.config/nvim'
 wS 'ln -sf $HOME/.config/nvim/.bash_aliases $HOME/.bash_aliases'
 wS 'ln -sf $HOME/.config/nvim/.tmux.conf $HOME/.tmux.conf'
+
+# nvm
+wS 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash'
+wS 'export NVM_DIR="$HOME/.nvm"'
+wS '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"'  # This loads nvm
+wS '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"'  # This loads nvm bash_completion
+
+# npm
+wS 'nvm install --lts'
+
+# yarn
+wS 'npm i -g yarn'
