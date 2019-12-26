@@ -62,3 +62,5 @@ wS 'ln -sf /home/u/.config/nvim/.bash_aliases /home/u/.bash_aliases'
 wS 'ln -sf /home/u/.config/nvim/.tmux.conf /home/u/.tmux.conf'
 
 # Manual stuff: pwd, nvm, node/npm, yarn, initial nvim start:
+# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash 
+# nvm i --lts && npm i -g yarn
