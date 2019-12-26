@@ -68,5 +68,5 @@ function wS() { sudo -iu u bash -c "$@"; }
 
 wS 'mkdir $HOME/.config'
 wS 'git clone https://github.com/2jj/nvim.git $HOME/.config/nvim'
-wS 'ln -s $HOME/.config/nvim/.bash_aliases $HOME/.bash_aliases'
-wS 'ln -s $HOME/.config/nvim/.tmux.conf $HOME/.tmux.conf'
+wS 'ln -sf $HOME/.config/nvim/.bash_aliases $HOME/.bash_aliases'
+wS 'ln -sf $HOME/.config/nvim/.tmux.conf $HOME/.tmux.conf'
