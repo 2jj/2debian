@@ -54,11 +54,6 @@ sudo apt-get install -y tmux
 # ripgrep
 sudo apt-get install -y ripgrep
 
-# node
-curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o n
-bash n lts
-npm i -g yarn
-
 # as user from here:
 function wS() { sudo -iu u bash -c "$@"; }
 wS 'mkdir /home/u/.config'
