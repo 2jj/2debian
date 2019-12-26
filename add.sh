@@ -51,12 +51,14 @@ sudo apt-get install -y neovim
 # tmux
 sudo apt-get install -y tmux
 
+curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o n
+bash n lts
+
 # as user from here:
 function wS() { sudo -iu u bash -c "$@"; }
 wS 'mkdir $HOME/.config'
 wS 'git clone https://github.com/2jj/nvim.git $HOME/.config/nvim'
 wS 'ln -sf $HOME/.config/nvim/.bash_aliases $HOME/.bash_aliases'
 wS 'ln -sf $HOME/.config/nvim/.tmux.conf $HOME/.tmux.conf'
-wS 'curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o n'
-wS 'bash n lts'
+
 wS 'npm i -g yarn'
