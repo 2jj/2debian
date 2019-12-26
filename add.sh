@@ -58,9 +58,9 @@ npm i -g yarn
 
 # as user from here:
 function wS() { sudo -iu u bash -c "$@"; }
-wS 'mkdir $HOME/.config'
-wS 'git clone https://github.com/2jj/nvim.git $HOME/.config/nvim'
-wS 'ln -sf $HOME/.config/nvim/.bash_aliases $HOME/.bash_aliases'
-wS 'ln -sf $HOME/.config/nvim/.tmux.conf $HOME/.tmux.conf'
+wS 'mkdir /home/u/.config'
+wS 'git clone https://github.com/2jj/nvim.git /home/u/.config/nvim'
+wS 'ln -sf /home/u/.config/nvim/.bash_aliases /home/u/.bash_aliases'
+wS 'ln -sf /home/u/.config/nvim/.tmux.conf /home/u/.tmux.conf'
 
 
