@@ -69,4 +69,7 @@ wS 'ln -sf /home/u/.config/nvim/.tmux.conf /home/u/.tmux.conf'
 # passwd u
 # su u
 # curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash 
+# exit
+# su u
+# cd ~
 # nvm i --lts && npm i -g yarn
