@@ -62,9 +62,8 @@ wS 'ln -sf $HOME/.config/nvim/.tmux.conf $HOME/.tmux.conf'
 
 # nvm
 wS 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash'
-wS 'export NVM_DIR="$HOME/.nvm"'
-wS '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"'  # This loads nvm
-wS '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"'  # This loads nvm bash_completion
+wS '[ -s "/home/u/nvm.sh" ] && \. "/home/u/nvm.sh"'  # This loads nvm
+wS '[ -s "/home/u/bash_completion" ] && \. "/home/u/bash_completion"'  # This loads nvm bash_completion
 
 # npm
 wS 'nvm install --lts'
