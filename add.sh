@@ -62,4 +62,4 @@ wS 'ln -sf $HOME/.config/nvim/.tmux.conf $HOME/.tmux.conf'
 
 # nvm
 wS 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash'
-wS '. /home/u/.nvm/nvm.sh && nvm install --lts && npm i -g yarn'
+wS 'source /home/u/.nvm/nvm.sh && nvm install --lts && npm i -g yarn'
