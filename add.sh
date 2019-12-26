@@ -40,6 +40,10 @@ sudo curl -L https://github.com/docker/machine/releases/download/v0.13.0/docker-
     chmod +x /tmp/docker-machine && \
     sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
     
+# Unattended upgrades
+apt-get install -y unattended-upgrades apt-listchanges
+apt upgrade -y
+
 # nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 
