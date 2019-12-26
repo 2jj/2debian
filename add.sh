@@ -11,6 +11,8 @@ usermod                 \
     u
 cp -r ~/.ssh /home/u/
 chown -R u:u /home/u/.ssh
+sed -ie 's/#PasswordAuthentication\syes/PasswordAuthentication no/g' /etc/ssh/sshd_config
+sed -ie 's/UsePAM\syes/UsePAM no/g' /etc/ssh/sshd_config
 
 # docker-ce
 sudo apt-get -y update
