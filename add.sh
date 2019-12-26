@@ -52,14 +52,13 @@ sudo apt-get -y install neovim
 # tmux
 sudo apt-get -y install tmux
 
+# node
+sudo apt-get -y install nodejs
+
 # as user from here:
 function wS() { sudo -iu u bash -c "$@"; }
-
 wS 'mkdir $HOME/.config'
 wS 'git clone https://github.com/2jj/nvim.git $HOME/.config/nvim'
 wS 'ln -sf $HOME/.config/nvim/.bash_aliases $HOME/.bash_aliases'
 wS 'ln -sf $HOME/.config/nvim/.tmux.conf $HOME/.tmux.conf'
-
-# nvm
-wS 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash'
-wS 'source /home/u/.nvm/nvm.sh && nvm install --lts && npm i -g yarn'
+wS 'npm i -g yarn'
